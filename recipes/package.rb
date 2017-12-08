@@ -49,5 +49,5 @@ include_recipe 'chef_nginx::commons'
 
 service 'nginx' do
   supports status: true, restart: true, reload: true
-  action   [:start, :enable]
+  action   [:stop, :enable]
 end
